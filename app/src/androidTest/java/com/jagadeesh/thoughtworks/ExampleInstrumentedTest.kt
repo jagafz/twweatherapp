@@ -1,4 +1,4 @@
-package com.jagadeesh.myapplication
+package com.jagadeesh.thoughtworks
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

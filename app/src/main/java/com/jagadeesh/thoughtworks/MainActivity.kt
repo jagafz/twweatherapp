@@ -1,4 +1,4 @@
-package com.jagadeesh.myapplication
+package com.jagadeesh.thoughtworks
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

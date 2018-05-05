@@ -1,4 +1,4 @@
-package com.jagadeesh.myapplication
+package com.jagadeesh.thoughtworks
 
 import org.junit.Test
 
