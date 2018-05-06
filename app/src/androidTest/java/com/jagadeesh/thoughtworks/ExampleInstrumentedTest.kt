@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.jagadeesh.myapplication", appContext.packageName)
+        assertEquals("com.jagadeesh.thoughtworks", appContext.packageName)
     }
 }
