@@ -7,7 +7,7 @@ import com.jagadeesh.thoughtworks.R
 import com.jagadeesh.thoughtworks.modal.WeatherInfo
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), WeatherDetailView {
+class MainActivity : AppCompatActivity(), IWeatherDetailView {
 
     private lateinit var presenter: WeatherDetailPresenter
     private var progressDialog: ProgressDialog? = null
