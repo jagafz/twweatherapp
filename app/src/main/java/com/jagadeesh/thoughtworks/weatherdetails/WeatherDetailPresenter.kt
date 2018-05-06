@@ -26,7 +26,7 @@ class WeatherDetailPresenter(private val view: IWeatherDetailView,
                             view.updateWeather(weather)
                             view.hideLoader()
                         }, { error -> Log.e("Weather info Failure",error.localizedMessage)
-                             view.hideLoader()
+                            view.hideLoader()
                         })
     }
 }

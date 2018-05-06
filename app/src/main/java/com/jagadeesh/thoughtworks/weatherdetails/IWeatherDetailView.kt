@@ -8,6 +8,7 @@ import com.jagadeesh.thoughtworks.modal.WeatherInfo
 
 interface IWeatherDetailView {
     fun updateWeather(weather: WeatherInfo)
+    fun onError(error: String)
     fun showLoader()
     fun hideLoader()
 }

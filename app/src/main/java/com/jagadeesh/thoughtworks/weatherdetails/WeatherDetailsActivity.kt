@@ -3,12 +3,12 @@ package com.jagadeesh.thoughtworks.weatherdetails
 import android.app.ProgressDialog
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.jagadeesh.thoughtworks.R
 import com.jagadeesh.thoughtworks.modal.WeatherInfo
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), IWeatherDetailView {
-
     private lateinit var presenter: WeatherDetailPresenter
     private var progressDialog: ProgressDialog? = null
 
@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity(), IWeatherDetailView {
         humidity.text = weather.main.humidity.toString()
         pressure.text = weather.main.pressure.toString()
         wind.text = weather.wind.speed.toString()+"/"+weather.wind.deg
+    }
+
+    override fun onError(error: String) {
+        Log.e("Weather info Failure",error)
     }
 
     override fun showLoader() {

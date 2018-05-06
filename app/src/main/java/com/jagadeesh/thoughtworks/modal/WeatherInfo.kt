@@ -11,7 +11,8 @@ data class WeatherInfo(
         val id: Int,
         val clouds: Clouds,
         val name: String,
-        val sys: Sys)
+        val sys: Sys
+)
 
 data class Wind(
         val speed: Double,
