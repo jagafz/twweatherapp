@@ -20,10 +20,11 @@ class MainActivity : AppCompatActivity(), WeatherDetailView {
     }
 
     override fun updateWeather(weather: WeatherInfo) {
-        location.text = weather.name
-        wind.text = weather.main.temp.toString()
+        location.text = weather.name + ", "+ weather.sys.country
+        temp.text = weather.main.temp.toString() + " Degree"
         humidity.text = weather.main.humidity.toString()
         pressure.text = weather.main.pressure.toString()
+        wind.text = weather.wind.speed.toString()+"/"+weather.wind.deg
     }
 
     override fun showLoader() {

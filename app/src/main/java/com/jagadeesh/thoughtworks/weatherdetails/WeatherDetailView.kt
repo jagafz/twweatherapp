@@ -7,9 +7,7 @@ import com.jagadeesh.thoughtworks.modal.WeatherInfo
  */
 
 interface WeatherDetailView {
-
     fun updateWeather(weather: WeatherInfo)
     fun showLoader()
     fun hideLoader()
-
 }

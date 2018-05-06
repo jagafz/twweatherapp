@@ -42,7 +42,7 @@
         android:layout_margin="20dp">
 
         <TextView
-            android:id="@+id/wind"
+            android:id="@+id/temp"
             android:layout_width="wrap_content"
             android:layout_marginRight="50dp"
             android:textColor="@color/colorAccent"
@@ -58,6 +58,7 @@
             android:layout_alignParentLeft="true"
             android:elevation="5dp"
             android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
             app:srcCompat="@drawable/weather"
             />
 
@@ -68,7 +69,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:elevation="5dp"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="20dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -115,5 +116,31 @@
             android:textColor="@color/colorPrimary"
             android:layout_height="wrap_content"
             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:elevation="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="Wind Speed/temp"
+        />
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        />
     </RelativeLayout>
 </LinearLayout>

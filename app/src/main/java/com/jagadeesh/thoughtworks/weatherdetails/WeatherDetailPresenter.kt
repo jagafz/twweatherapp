@@ -11,9 +11,7 @@ import rx.schedulers.Schedulers
  * Created by jagadeesh on 05/05/18.
  */
 
-class WeatherDetailPresenter(
-
-    val view: WeatherDetailView){
+class WeatherDetailPresenter(val view: WeatherDetailView){
     private val retrofitService: WeatherService = WeatherService.retrofitClient.instance()
     private val processScheduler: Scheduler = Schedulers.io()
     private val androidScheduler: Scheduler = AndroidSchedulers.mainThread()

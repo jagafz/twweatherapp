@@ -9,11 +9,17 @@ data class WeatherInfo(
         val wind: Wind,
         val dt: Int,
         val id: Int,
-        val name: String)
+        val clouds: Clouds,
+        val name: String,
+        val sys: Sys)
 
 data class Wind(
         val speed: Double,
         val deg: Double
+)
+
+data class Clouds(
+        val all: Int
 )
 
 data class Weather(
@@ -29,4 +35,13 @@ data class Main(
         val humidity: Int,
         val temp_min: Double,
         val temp_max: Double
+)
+
+data class Sys(
+        val type: Int,
+        val id: Int,
+        val message: Double,
+        val country: String,
+        val sunrise: Long,
+        val sunset: Long
 )
